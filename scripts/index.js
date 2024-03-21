@@ -61,7 +61,7 @@ function createCard(activity) {
     deleteButton.id = id;
 
     deleteButton.addEventListener("click", function () {
-        handleDeleteActivity(id);
+        handlerDeleteActivity(id);
     });
 
     //Agrego todos los elementos al div
@@ -85,7 +85,7 @@ function updateCardContainer() {
     cardContainer.append(...activityElements);
 }
 
-function handleCreateActivity(event) {
+function handlerCreateActivity(event) {
     event.preventDefault();
 
     //Obtengo los elementos y sus valores
@@ -108,9 +108,14 @@ function handleCreateActivity(event) {
 }
 
 const addActivityButton = document.getElementById("addActivity");
-addActivityButton.addEventListener("click", handleCreateActivity);
+addActivityButton.addEventListener("click", handlerCreateActivity);
 
-function handleDeleteActivity(activityId) {
+function handlerDeleteActivity(activityId) {
     activityRepository.deleteActivity(activityId);
     updateCardContainer();
 }
+
+module.exports = {
+    Activity,
+    Repository,
+};
