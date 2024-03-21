@@ -3,9 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Proyecto M1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
 </head>
 <body>
-    <h1>Proyecto M1</h1>
+    <header>
+        <h1>Agustina Casas</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sobre Mi</h2>
+            <div>
+                <p>
+                    Me llamo Florencia Agustina Casas, me dicen Agus, y soy profesora de Música y de Matemáticas. 
+                    Desde siempre que soy muy curiosa y me gusta mucho aprender. Ahora me picó el bichito con la 
+                    Programación, en lo que voy explorando poco a poco.
+                </p>
+                <p>
+                    Me gusta leer, cantar, cocinar, dar clases y viajar. En cualquiera de mis hámbitos profesionales 
+                    soy un espécimen raro por lo dispares de mis gustos, pero creo que en realidad esto me otorga 
+                    una ventaja al momento de trabajar en equipo con otras áreas o en la búsqueda de soluciones de 
+                    diferentes problemas.
+                </p>
+                <p>
+                    Nací y viví siempre en Córdoba Capital, Argentina, y soy fanática de ir al río los fines de semana y 
+                    de pasar las vacaciones de invierno en pueblos como Villa Gral. Belgrano o La Cumbrecita.
+                </p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Mis Tecnologías Favoritas</h2>
+            <div>
+                <div>
+                    <img src="assets/html.png" alt="Imagen">
+                    <div>
+                        <h3>Html</h3>
+                        <p> 
+                            El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y 
+                            desplegar una página web y sus contenidos.
+                        </p>
+                    </div>
+                </div>
+                
+                <div>
+                    <img src="assets/css.png" alt="Imagen">
+                    <div>
+                        <h3>Css</h3>
+                        <p>
+                            Lenguaje que maneja el diseño y presentación de las páginas web, es decir, cómo lucen cuando 
+                            un usuario las visita. Funciona junto con el lenguaje HTML que se encarga del contenido 
+                            básico de los sitios.
+                        </p>
+                    </div>
+                </div>
+                
+                <div>
+                    <img src="assets/python.png" alt="Imagen">
+                    <div>
+                        <h3>Python</h3>
+                        <p>
+                            Lenguaje de programación ampliamente utilizado en las aplicaciones web, el desarrollo de 
+                            software, la ciencia de datos y el machine learning (además, fue el primer lenguaje que 
+                            manejé cuando estudié Ingeniería Química).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Mis Actividades Favoritas</h2>
+            <div>
+                <form action="" class="activities_form">
+                    <input type="text" id="titleInput" placeholder="Actividad"/>
+                    <br>
+                    <textarea id="descriptionInput" rows="5" placeholder="Descripción de la actividad"></textarea>
+                    <br>
+                    <input type="text" id="urlInput" placeholder="URL de imagen de actividad"/>
+                    <div>
+                        <button id="addActivity">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <br>
+            
+            <div id="cardContainer">
+                <!-- Acá van las tarjetas -->
+            </div>
+        </section>
+    </main>
 </body>
 </html>

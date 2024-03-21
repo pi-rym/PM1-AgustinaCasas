@@ -1,0 +1,18 @@
+/* Reset general */
+html, body, div, span, a, object, table, button, section  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Estilos específicos para ciertos elementos */
+body {
+    line-height: 1;
+}
+
+form {
+    list-style: none;
+}
