@@ -97,3 +97,39 @@ body {
 .enviar:hover {
     background-color: #38d708;
 }
+
+.eliminar:hover {
+    background-color: #fa1815;
+}
+
+.card_container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.card_item {
+    width: 20%;
+    margin: 10px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_img {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 20px 70px;
+}

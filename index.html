@@ -23,7 +23,7 @@
                 </p>
                 <p>
                     Me gusta leer, cantar, cocinar, dar clases y viajar. En cualquiera de mis ámbitos profesionales 
-                    soy un espécimen raro por lo dispares de mis gustos, pero creo que en realidad esto me otorga 
+                    soy un espécimen raro por lo dispar de mis gustos, pero creo que en realidad esto me otorga 
                     una ventaja al momento de trabajar en equipo con otras áreas o en la búsqueda de soluciones de 
                     diferentes problemas.
                 </p>
@@ -38,7 +38,7 @@
         <section class="tecnologias">
             <div class="card">
                 <div class="card-info">
-                    <h3>Html</h3>
+                    <h3>HTML</h3>
                     <img src="assets/html.png" alt="Imagen">
                     <p> 
                         El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y 
@@ -49,12 +49,23 @@
             
             <div class="card">
                 <div class="card-info">
-                    <h3>Css</h3>
+                    <h3>CSS</h3>
                     <img src="assets/css.png" alt="Imagen">
                     <p>
                         Lenguaje que maneja el diseño y presentación de las páginas web, es decir, cómo lucen cuando 
                         un usuario las visita. Funciona junto con el lenguaje HTML que se encarga del contenido 
                         básico de los sitios.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-info">
+                    <h3>JavaScript</h3>
+                    <img src="assets/js.png" alt="Imagen">
+                    <p>
+                        Lenguaje de secuencias de comandos que te permite crear contenido de actualización dinámica, controlar multimedia, 
+                        animar imágenes y demás.
                     </p>
                 </div>
             </div>
@@ -86,16 +97,8 @@
             </div>
             <br>
             
-            <div id="cardContainer"></div>
-
-            <template id="cardTemplate">
-                <article class="card_item">
-                    <img class="card_img" alt="" />
-                    <h3 class="title"></h3>
-                    <p class="description"></p>
-                    <button id="delete">Eliminar</button>
-                </article>
-            </template>
+            <div class="card_container" id="cardContainer"></div>
+            
         </section>
     </main>
     <script src="scripts/index.js"></script>
